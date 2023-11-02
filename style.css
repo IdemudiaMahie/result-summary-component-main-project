@@ -1,0 +1,214 @@
+@font-face {
+    font-family: mahieHankenGroteskVariableFont;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+    /* Colors */
+
+/* Primary */
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+--faded-Light-red: hsla(0, 100%, 67%, 0.1);
+--faded-Orangey-yellow: hsla(39, 100%, 56%, 0.1);
+--faded-Green-teal: hsla(166, 100%, 37%, 0.1);
+--faded-Cobalt-blue: hsla(234, 85%, 45%, 0.1);
+
+/* Gradients */
+
+/* (background) */
+--Light-slate-blue : hsl(252, 100%, 67%);
+--Light-royal-blue: hsl(241, 81%, 54%);
+
+/* (circle) */
+--Violet-blue: hsla(256, 72%, 46%, 1);
+--Persian-blue: hsla(241, 72%, 46%, 0);
+
+/* Neutral */
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.125rem;
+    font-family: mahieHankenGroteskVariableFont;
+    font-weight: 500;
+    position: relative;
+    min-height: 100vh;
+}
+
+section:first-child {
+    background: linear-gradient(to top, var(--Light-royal-blue), var(--Light-slate-blue));
+    color: var(--Light-lavender);
+    text-align: center;
+    border-radius: 0 0 2rem 2rem;
+    padding: 0 2.5em 2.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 1em 0;
+}
+
+.circle {
+    width: 40vw;
+    height: 40vw;
+    background: linear-gradient(to top, var(--Persian-blue), var(--Violet-blue));
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.circle + p,
+.circle p:first-child {
+    color: var(--White);
+}
+
+.circle p:first-child {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.circle + p {
+    font-size: 2rem;
+    margin: 0.75rem 0;
+}
+
+section:last-child {
+    padding: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    margin: -0.9rem 0 0 0.6rem;
+    font-size: 1.5rem;
+}
+
+section:last-child p {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    border-radius: 0.7rem;
+}
+
+section:last-child p:first-of-type {
+    background-color: var(--faded-Light-red);
+}
+
+section:last-child p:nth-of-type(2) {
+    background-color: var(--faded-Orangey-yellow);
+}
+
+section:last-child p:nth-of-type(3) {
+    background-color: var(--faded-Green-teal);
+}
+
+section:last-child p:last-of-type {
+    background-color: var(--faded-Cobalt-blue);
+}
+
+section:last-child p span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+section:last-child p:first-of-type span:first-child {
+    color: var(--Light-red);
+}
+
+section:last-child p:nth-of-type(2) span:first-child {
+    color: var(--Orangey-yellow);
+}
+
+section:last-child p:nth-of-type(3) span:first-child {
+    color: var(--Green-teal);
+}
+
+section:last-child p:last-of-type span:first-child {
+    color: var(--Cobalt-blue);
+}
+
+section:last-child p span:last-child {
+    color: hsl(224, 20%, 50%);
+}
+
+b {
+    color: #000;
+}
+
+button {
+    background-color: var(--Dark-gray-blue);
+    color: var(--White);
+    width: 100%;
+    font: inherit;
+    font-weight: 700;
+    padding: 1em;
+    margin-top: 0.8rem;
+    border-radius: 2rem;
+}
+
+button:hover,
+button:focus {
+    background: linear-gradient(to top, var(--Light-royal-blue), var(--Violet-blue));
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: #ff6;
+    width: 100%;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        place-content: center;
+    }
+
+    article {
+        width: 45vw;
+        display: flex;
+        box-shadow: 13px 13px 33px 1px var(--Light-lavender);
+        border-radius: 2rem;
+    }
+
+    section:first-child {
+        width: 50%;
+        border-radius: 2rem;
+        padding: 0 2.5em 2.5em;
+    }
+    
+    .circle {
+        width: 75%;
+        height: 50%;
+    }
+
+    section:last-child {
+        width: 50%;
+    }
+}
