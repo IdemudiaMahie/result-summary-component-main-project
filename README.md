@@ -15,7 +15,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-I need to update the readMe document!!!!!!
+
 ## Overview
 
 ### The challenge
@@ -27,51 +27,67 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshots/mobile-view-result.PNG)
+The above links to a mobile view solution for the project.
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshots/desktop-view-result.PNG)
+The above links to a desktop view solution for the project.
 
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- Accessibility (Semantic HTML5 markup)
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- CSS Variables
+- Ttf Fonts
+- Responsive design
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- JavaScript
+- ES6
+- Fetch API
+- JSON Data
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- I got to learn how to use true type font.
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+@font-face {
+    font-family: mahieHankenGroteskVariableFont;
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 ```
+- This is what it looks like in action, using css custom property.
+```css
+body {font-family: mahieHankenGroteskVariableFont;}
+```
+
+- Improved in my capabilities with Pseudo-classes.
+```css
+  section:last-child p:last-of-type span:first-child {
+      color: var(--Cobalt-blue);
+  }
+```
+
+- I learned to use Pseudo-classes as selectors in JavaScript.
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+const summarySection = document.querySelector('section:last-child')
+const summaryCategory = summarySection.querySelectorAll('p span:first-child')
 ```
+
+- I also learned about using fetch API in JavaScript, which is useful when working with APIs or making HTTP requests from your frontend application.
+
+```js
+fetch('./data.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json))
+```
+- I was able to get an understanding of how to fetch data from a json file using javascript, and then display it in html format.
 
 
 ### Continued development

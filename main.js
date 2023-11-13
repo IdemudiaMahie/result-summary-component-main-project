@@ -17,5 +17,3 @@ fetch('./data.json')
         summaryScore[2].textContent = json[2]['score']
         summaryScore[3].textContent = json[3]['score']
     });
-
-// I intend to come back to this
