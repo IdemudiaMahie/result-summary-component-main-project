@@ -28,10 +28,10 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshots/mobile-view-result.PNG)
-The above links to a mobile view solution for the project.
+- The above links to a mobile view solution for the project.
 
 ![](./screenshots/desktop-view-result.PNG)
-The above links to a desktop view solution for the project.
+- The above links to a desktop view solution for the project.
 
 
 ## My process
@@ -42,15 +42,6 @@ The above links to a desktop view solution for the project.
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- CSS Variables
-- Ttf Fonts
-- Responsive design
-- Mobile-first workflow
-- JavaScript
-- ES6
-- Fetch API
-- JSON Data
-
 
 ### What I learned
 
@@ -109,3 +100,7 @@ fetch('./data.json')
 
 - My deepest appreciation goes to Mr. Dave Gray whose tutorial videos has helped build my foundation in web development.
 - I am also grateful to GMT Software whose coding bootcamp has given me environment and community of like-minded individuals to grow.
+
+
+
+## Date of Completion : November 2nd, 2023.
